@@ -1,3 +1,9 @@
+/*
+ * date:2019-07-17 10:30
+ * Author:null
+ * Project:SeqStack
+*/
+
 #ifndef _MY_SEQSTACK_H
 #define _MY_SEQSTACK_H
 
