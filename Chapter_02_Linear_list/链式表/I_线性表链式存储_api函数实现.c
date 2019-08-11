@@ -83,6 +83,7 @@ int LinkList_Insert(LinkList* list, LinkListNode* node, int pos)
 	2 current->next = node;
 	 */
 	int i = 0;
+	int ret = 0;
 	TLinkList *tList = NULL;
 	LinkListNode *current = NULL;
 
@@ -92,7 +93,7 @@ int LinkList_Insert(LinkList* list, LinkListNode* node, int pos)
 	current =&(tList->header);
 	if(list == NULL || node == NULL || pos < 0)
 	{
-		ret = 0;
+		ret = -1;
 		printf("fun LinkList_Insert() err:%d\n",ret);
 		return NULL;
 	}
@@ -103,7 +104,7 @@ int LinkList_Insert(LinkList* list, LinkListNode* node, int pos)
 	}
 
 	//1 让node连接后续链表
-	node->next = current->next
+	node->next = current->next;
 	//2 让前面的链表 链接新的结点
 	current->next = node;
 
@@ -125,13 +126,13 @@ LinkListNode* LinkList_Get(LinkList* list, int pos)
 	}
 
 
-	current =&(tList->header;);//让辅助指针变量指向链表的头部 
+	current =&(tList->header);//让辅助指针变量指向链表的头部 
 
 	for(i = 0;i < pos && (current->next != NULL);i++)//跳pos次
 	{
 		current = current->next;
 	}
-	ret = current->next
+	ret = current->next;
 
 	return ret;
 
