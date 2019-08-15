@@ -68,7 +68,7 @@ printf("%d\n", Stack_Get(T->rchild));
 }
 }*/
 
-//一直往坐走，走到中序遍历的起点
+//一直往左走，走到中序遍历的起点
 BiTNode *goLeft(BiTNode *T, stack<BiTNode *> &s)
 {
 	if (T == NULL)
