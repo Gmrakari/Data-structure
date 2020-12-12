@@ -15,7 +15,7 @@
 /*
 	date:2019-08-17 19:00
 	Author : null
-	Projext:ThreadBinaryTree
+	Project:ThreadBinaryTree
  */
 
 typedef int Status;
